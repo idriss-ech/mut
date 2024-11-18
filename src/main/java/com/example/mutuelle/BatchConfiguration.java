@@ -1,22 +1,26 @@
 package com.example.mutuelle;
 
+import jakarta.persistence.EntityManagerFactory;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
-import org.springframework.batch.item.database.JdbcBatchItemWriter;
-import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder;
+import org.springframework.batch.item.ItemProcessor;
+import org.springframework.batch.item.database.JpaItemWriter;
+import org.springframework.batch.item.database.builder.JpaItemWriterBuilder;
 import org.springframework.batch.item.json.JacksonJsonObjectReader;
 import org.springframework.batch.item.json.JsonItemReader;
 import org.springframework.batch.item.json.builder.JsonItemReaderBuilder;
+import org.springframework.batch.item.support.CompositeItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import javax.sql.DataSource;
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 public class BatchConfiguration {
@@ -26,9 +30,6 @@ public class BatchConfiguration {
 
     @Autowired
     private PlatformTransactionManager transactionManager;
-
-    @Autowired
-    private DataSource dataSource;
 
     @Autowired
     private DossierItemProcessor dossierItemProcessor;
@@ -43,25 +44,30 @@ public class BatchConfiguration {
     }
 
     @Bean
-    public JdbcBatchItemWriter<Dossier> writer() {
-        return new JdbcBatchItemWriterBuilder<Dossier>()
-                .dataSource(dataSource)
-                .sql("INSERT INTO dossiers (nom_assure, numero_affiliation, immatriculation, lien_parente, " +
-                        "montant_total_frais, prix_consultation, nombre_pieces_jointes, nom_beneficiaire, " +
-                        "date_depot_dossier, montant_remboursement) " +
-                        "VALUES (:nomAssure, :numeroAffiliation, :immatriculation, :lienParente, " +
-                        ":montantTotalFrais, :prixConsultation, :nombrePiecesJointes, :nomBeneficiaire, " +
-                        ":dateDepotDossier, :montantRemboursement)")
-                .beanMapped()
+    public JpaItemWriter<Dossier> writer(EntityManagerFactory entityManagerFactory) {
+        return new JpaItemWriterBuilder<Dossier>()
+                .entityManagerFactory(entityManagerFactory)
                 .build();
     }
 
     @Bean
-    public Step step1(JsonItemReader<Dossier> reader, JdbcBatchItemWriter<Dossier> writer) {
+    public CompositeItemProcessor<Dossier, Dossier> compositeProcessor() {
+        List<ItemProcessor<Dossier, Dossier>> processors = new ArrayList<>();
+        processors.add(new ValidationProcessor());
+        processors.add(dossierItemProcessor);
+
+        CompositeItemProcessor<Dossier, Dossier> compositeProcessor = new CompositeItemProcessor<>();
+        compositeProcessor.setDelegates(processors);
+
+        return compositeProcessor;
+    }
+
+    @Bean
+    public Step step1(JsonItemReader<Dossier> reader, JpaItemWriter<Dossier> writer, CompositeItemProcessor<Dossier, Dossier> processor) {
         return new StepBuilder("step1", jobRepository)
                 .<Dossier, Dossier>chunk(10, transactionManager)
                 .reader(reader)
-                .processor(dossierItemProcessor)
+                .processor(processor)
                 .writer(writer)
                 .build();
     }

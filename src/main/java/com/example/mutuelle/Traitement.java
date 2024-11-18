@@ -21,6 +21,7 @@ public class Traitement {
     @JsonBackReference
     private Dossier dossier;
 
+
     // Getters et Setters
     public Long getId() {
         return id;

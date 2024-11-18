@@ -22,7 +22,7 @@ public class Dossier {
     private String nomBeneficiaire;
     private String dateDepotDossier;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "dossier")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "dossier", orphanRemoval = true)
     @JsonManagedReference
     private List<Traitement> traitements = new ArrayList<>();
 
