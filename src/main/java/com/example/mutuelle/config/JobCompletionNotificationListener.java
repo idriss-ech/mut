@@ -1,4 +1,4 @@
-package com.example.mutuelle;
+package com.example.mutuelle.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

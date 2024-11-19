@@ -1,0 +1,314 @@
+[
+    {
+        "nomAssure": "",
+        "numeroAffiliation": "AFF710221",
+        "immatriculation": "IMM883041",
+        "lienParente": "fils",
+        "montantTotalFrais": 325.45,
+        "prixConsultation": 81.9,
+        "nombrePiecesJointes": 5,
+        "nomBeneficiaire": "Nom 40",
+        "dateDepotDossier": "2024-11-11",
+        "traitements": [
+            {
+                "codeBarre": 6118000360049,
+                "existe": true,
+                "nomMedicament": "Ibuprof\u00e8ne",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 10.34
+            },
+            {
+                "codeBarre": 6118000150121,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 18.67
+            },
+            {
+                "codeBarre": 6118000011835,
+                "existe": true,
+                "nomMedicament": "Amoxicilline",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 16.75
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 66",
+        "numeroAffiliation": "AFF219550",
+        "immatriculation": "",
+        "lienParente": "fils",
+        "montantTotalFrais": 133.88,
+        "prixConsultation": 49.85,
+        "nombrePiecesJointes": 4,
+        "nomBeneficiaire": "Nom 27",
+        "dateDepotDossier": "2024-11-14",
+        "traitements": [
+            {
+                "codeBarre": 6118001182459,
+                "existe": true,
+                "nomMedicament": "Ibuprof\u00e8ne",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 10.03
+            },
+            {
+                "codeBarre": 6118000140870,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 10.06
+            },
+            {
+                "codeBarre": 6118000250357,
+                "existe": true,
+                "nomMedicament": "Parac\u00e9tamol",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 5.07
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 93",
+        "numeroAffiliation": "AFF710204",
+        "immatriculation": "IMM624555",
+        "lienParente": "fils",
+        "montantTotalFrais": 485.68,
+        "prixConsultation": 32.21,
+        "nombrePiecesJointes": 3,
+        "nomBeneficiaire": "Nom 31",
+        "dateDepotDossier": "2024-11-10",
+        "traitements": [
+            {
+                "codeBarre": 6118001070824,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 8.6
+            },
+            {
+                "codeBarre": 6118010116230,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 19.81
+            },
+            {
+                "codeBarre": 6118000032779,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 18.08
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 26",
+        "numeroAffiliation": "AFF215645",
+        "immatriculation": "IMM253359",
+        "lienParente": "\u00e9pouse",
+        "montantTotalFrais": 451.86,
+        "prixConsultation": 32.86,
+        "nombrePiecesJointes": 1,
+        "nomBeneficiaire": "Nom 63",
+        "dateDepotDossier": "2024-11-17",
+        "traitements": [
+            {
+                "codeBarre": 6118000100225,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 11.62
+            },
+            {
+                "codeBarre": 6118000031079,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 11.76
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 23",
+        "numeroAffiliation": "AFF708439",
+        "immatriculation": "IMM696108",
+        "lienParente": "\u00e9pouse",
+        "montantTotalFrais": 181.53,
+        "prixConsultation": 61.98,
+        "nombrePiecesJointes": 4,
+        "nomBeneficiaire": "Nom 11",
+        "dateDepotDossier": "2024-11-17",
+        "traitements": [
+            {
+                "codeBarre": 6118000100270,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 19.55
+            },
+            {
+                "codeBarre": 6118001050642,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 9.31
+            },
+            {
+                "codeBarre": 6118000011835,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 10.9
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 13",
+        "numeroAffiliation": "AFF185143",
+        "immatriculation": "IMM167282",
+        "lienParente": "fille",
+        "montantTotalFrais": 371.28,
+        "prixConsultation": 76.67,
+        "nombrePiecesJointes": 1,
+        "nomBeneficiaire": "Nom 71",
+        "dateDepotDossier": "2024-11-19",
+        "traitements": [
+            {
+                "codeBarre": 6118001050154,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 9.9
+            },
+            {
+                "codeBarre": 6118000120155,
+                "existe": true,
+                "nomMedicament": "Ibuprof\u00e8ne",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 11.58
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 10",
+        "numeroAffiliation": "AFF806087",
+        "immatriculation": "IMM808705",
+        "lienParente": "fille",
+        "montantTotalFrais": 408.38,
+        "prixConsultation": 89.66,
+        "nombrePiecesJointes": 3,
+        "nomBeneficiaire": "Nom 87",
+        "dateDepotDossier": "2024-11-18",
+        "traitements": [
+            {
+                "codeBarre": 6118001050017,
+                "existe": true,
+                "nomMedicament": "Ibuprof\u00e8ne",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 13.13
+            },
+            {
+                "codeBarre": 6118001200696,
+                "existe": true,
+                "nomMedicament": "Parac\u00e9tamol",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 9.38
+            },
+            {
+                "codeBarre": 6118001081820,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 17.66
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 27",
+        "numeroAffiliation": "AFF896008",
+        "immatriculation": "IMM517057",
+        "lienParente": "fille",
+        "montantTotalFrais": 369.34,
+        "prixConsultation": 81.36,
+        "nombrePiecesJointes": 1,
+        "nomBeneficiaire": "Nom 17",
+        "dateDepotDossier": "2024-11-16",
+        "traitements": [
+            {
+                "codeBarre": 6118001183104,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 5.45
+            },
+            {
+                "codeBarre": 6118001200306,
+                "existe": true,
+                "nomMedicament": "Parac\u00e9tamol",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 8.52
+            },
+            {
+                "codeBarre": 6118000140160,
+                "existe": true,
+                "nomMedicament": "Parac\u00e9tamol",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 9.97
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 57",
+        "numeroAffiliation": "AFF735332",
+        "immatriculation": "IMM584885",
+        "lienParente": "fille",
+        "montantTotalFrais": 193.21,
+        "prixConsultation": 59.95,
+        "nombrePiecesJointes": 1,
+        "nomBeneficiaire": "Nom 71",
+        "dateDepotDossier": "2024-11-15",
+        "traitements": [
+            {
+                "codeBarre": 6118000240150,
+                "existe": true,
+                "nomMedicament": "Ibuprof\u00e8ne",
+                "typeMedicament": "Antibiotique",
+                "prixMedicament": 12.91
+            },
+            {
+                "codeBarre": 6118000091547,
+                "existe": true,
+                "nomMedicament": "Aspirine",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 11.44
+            }
+        ]
+    },
+    {
+        "nomAssure": "Nom 19",
+        "numeroAffiliation": "AFF775364",
+        "immatriculation": "IMM529850",
+        "lienParente": "fils",
+        "montantTotalFrais": 132.96,
+        "prixConsultation": 52.62,
+        "nombrePiecesJointes": 2,
+        "nomBeneficiaire": "Nom 26",
+        "dateDepotDossier": "2024-11-11",
+        "traitements": [
+            {
+                "codeBarre": 6118000140870,
+                "existe": true,
+                "nomMedicament": "Amoxicilline",
+                "typeMedicament": "Anti-inflammatoire",
+                "prixMedicament": 8.88
+            },
+            {
+                "codeBarre": 6118000091974,
+                "existe": true,
+                "nomMedicament": "Diclof\u00e9nac",
+                "typeMedicament": "Antalgique",
+                "prixMedicament": 14.81
+            }
+        ]
+    }
+]
